@@ -1,20 +1,573 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <title>Index</title>
-</head>
-<body class="flex flex-col min-h-screen">
-<load
-="partials/header.html" />
-<load
-<div class="container py-10">
-    <ul class="space-y-4 list-decimal">
-        <li><a href="main.html">Main</a></li>
-    </ul>
-</div>
-<load
-="partials/footer.html" />
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <title>Index</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    </head>
+    <body class="flex min-h-screen flex-col">
+        <header class="container flex items-center py-3">
+            <img src="img/logo.png" alt="" width="278" height="89" loading="lazy" />
+            <div class="ml-auto flex gap-3">
+                <div>
+                    <div class="flex items-center gap-3">
+                        <a href="tel:+79283356663" class="text-[26px]">+7 (928) 335 66 63</a>
+                        <a href="#" class="text-[0px]">
+                            <svg class="icon-wa size-8">
+                                <use href="#icon-wa"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="pr-11 text-right">
+                        <a href="mailto:energogost@mail.ru" class="text-secondary">energogost@mail.ru</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center gap-3">
+                        <a href="tel:+7928277626" class="text-[26px]">+7 (928) 277 76 26</a>
+                        <a href="#" class="text-[0px]">
+                            <svg class="icon-wa size-8">
+                                <use href="#icon-wa"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="pr-11 text-right">
+                        <button class="text-primary" type="button">Заказать звонок</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="relative">
+            <img src="img/slider.jpg" alt="" width="2000" height="705" loading="lazy" />
+            <div class="container absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white">
+                <div class="max-w-[550px]">
+                    <div class="mb-6 text-4xl font-bold uppercase">Скорость работы не соперник качеству!</div>
+                    <p class="text-[29px]">Компания «Энергогост» является одним из лидеров среди компаний</p>
+                </div>
+            </div>
+        </div>
+        <div class="container py-20">
+            <div class="mb-12 text-center text-4xl font-bold uppercase">Виды работ</div>
+            <div class="mb-12 grid grid-cols-6 gap-6">
+                <div
+                    class="col-span-2 flex h-[250px] items-center justify-center rounded-[10px] bg-[#f6f6f6] text-center"
+                >
+                    <div>
+                        <div class="mb-8">
+                            <svg class="icon-power-supply inline-block h-[90px] w-14 text-primary">
+                                <use href="#icon-power-supply"></use>
+                            </svg>
+                        </div>
+                        <p>Монтаж силового <br />электрооборудования</p>
+                    </div>
+                </div>
+                <div
+                    class="col-span-2 flex h-[250px] items-center justify-center rounded-[10px] bg-[#f6f6f6] text-center"
+                >
+                    <div>
+                        <div class="mb-8">
+                            <svg class="icon-cable inline-block h-[90px] w-[71px] text-primary">
+                                <use href="#icon-cable"></use>
+                            </svg>
+                        </div>
+                        <p>
+                            Прокладка воздушных и подземных <br />
+                            силовых кабельных линий
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="col-span-2 flex h-[250px] items-center justify-center rounded-[10px] bg-[#f6f6f6] text-center"
+                >
+                    <div>
+                        <div class="mb-8">
+                            <svg class="icon-electric-panel inline-block h-[90px] w-[78px] text-primary">
+                                <use href="#icon-electric-panel"></use>
+                            </svg>
+                        </div>
+                        <p>
+                            Прокладка воздушных и подземных <br />
+                            силовых кабельных линий
+                        </p>
+                    </div>
+                </div>
+                <div class="col-span-3 flex h-[250px] items-center rounded-[10px] bg-[#f6f6f6]">
+                    <div class="w-[195px] flex-shrink-0 text-center">
+                        <svg class="icon-electric-meter inline-block h-[93px] w-[67px] text-primary">
+                            <use href="#icon-electric-meter"></use>
+                        </svg>
+                    </div>
+                    <p>
+                        Установка и подключение автономных источников электроснабжения,а также их пусконаладочные работы
+                    </p>
+                </div>
+                <div class="col-span-3 flex h-[250px] items-center rounded-[10px] bg-[#f6f6f6]">
+                    <div class="w-[195px] flex-shrink-0 text-center">
+                        <svg class="icon-electric-factory inline-block h-[90px] w-[110px] text-primary">
+                            <use href="#icon-electric-factory"></use>
+                        </svg>
+                    </div>
+                    <p>Подключение объектов к трансформаторной подстанции</p>
+                </div>
+                <div class="col-span-3 flex h-[250px] items-center rounded-[10px] bg-[#f6f6f6]">
+                    <div class="w-[195px] flex-shrink-0 text-center">
+                        <svg class="icon-electric-ground inline-block h-[77px] w-[77px] text-primary">
+                            <use href="#icon-electric-ground"></use>
+                        </svg>
+                    </div>
+                    <p>
+                        Монтаж заземлителя <br />
+                        и контура заземления
+                    </p>
+                </div>
+                <div class="col-span-3 flex h-[250px] items-center rounded-[10px] bg-[#f6f6f6]">
+                    <div class="w-[195px] flex-shrink-0 text-center">
+                        <svg class="icon-tester inline-block h-[88px] w-[88px] text-primary">
+                            <use href="#icon-tester"></use>
+                        </svg>
+                    </div>
+                    <p class="pr-4">Испытания электрооборудования и электросетей с помощью лаборатории</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-6 gap-6 text-white">
+                <div
+                    class="col-span-2 flex h-[250px] items-center justify-center rounded-[10px] bg-primary text-center"
+                >
+                    <div>
+                        <div class="mb-8">
+                            <svg class="icon-cable11 inline-block h-[69px] w-[69]">
+                                <use href="#icon-cable11"></use>
+                            </svg>
+                        </div>
+                        <p>
+                            Монтаж скрытой и открытой <br />
+                            электропроводки для рабочих <br />
+                            сетей 220/380В
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="col-span-2 flex h-[250px] items-center justify-center rounded-[10px] bg-primary text-center"
+                >
+                    <div>
+                        <div class="mb-8">
+                            <svg class="icon-stabilizer inline-block h-[71px] w-[89px]">
+                                <use href="#icon-stabilizer"></use>
+                            </svg>
+                        </div>
+                        <p>
+                            Прокладка воздушных и подземных <br />
+                            силовых кабельных линий
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="col-span-2 flex h-[250px] items-center justify-center rounded-[10px] bg-primary text-center"
+                >
+                    <div>
+                        <div class="mb-8">
+                            <svg class="icon-internet inline-block h-[90px] w-[95px]">
+                                <use href="#icon-internet"></use>
+                            </svg>
+                        </div>
+                        <p>Монтаж линий слаботочных систем</p>
+                    </div>
+                </div>
+                <div class="col-span-3 flex h-[250px] items-center rounded-[10px] bg-primary">
+                    <div class="w-[195px] flex-shrink-0 text-center">
+                        <svg class="icon-spotlight inline-block h-[125px] w-[123px]">
+                            <use href="#icon-spotlight"></use>
+                        </svg>
+                    </div>
+                    <p class="pr-4">Установка электрооборудования, монтаж точек подключения</p>
+                </div>
+                <div class="col-span-3 flex h-[250px] items-center rounded-[10px] bg-primary">
+                    <div class="w-[195px] flex-shrink-0 text-center">
+                        <svg class="icon-power-socket inline-block h-[90px] w-[90px]">
+                            <use href="#icon-power-socket"></use>
+                        </svg>
+                    </div>
+                    <p class="pr-4">Установка розеток, выключателей, светильников</p>
+                </div>
+            </div>
+        </div>
+        <div class="relative">
+            <img
+                src="img/bg_steps.jpg"
+                alt=""
+                width="2000"
+                height="698"
+                loading="lazy"
+                class="absolute left-0 top-0 h-full w-full object-cover"
+            />
+            <div class="container relative z-10 py-20 text-white">
+                <div class="mb-12 text-center text-4xl font-bold uppercase">Этапы производства работ</div>
+                <div class="grid grid-cols-2 gap-x-8 gap-y-12">
+                    <div class="flex gap-8">
+                        <div
+                            class="flex size-20 flex-shrink-0 items-center justify-center rounded-full bg-secondary text-[25px]"
+                        >
+                            1
+                        </div>
+                        <p class="text-lg">
+                            Получение необходимой информации об объекте, проведение замеров, изучение имеющейся
+                            проектной документации и заключение договора
+                        </p>
+                    </div>
+                    <div class="flex gap-8">
+                        <div
+                            class="flex size-20 flex-shrink-0 items-center justify-center rounded-full bg-secondary text-[25px]"
+                        >
+                            2
+                        </div>
+                        <p class="text-lg">
+                            Подготовка проекта внутренних и внешних электросетей согласно требований нормативной
+                            документации
+                        </p>
+                    </div>
+                    <div class="flex gap-8">
+                        <div
+                            class="flex size-20 flex-shrink-0 items-center justify-center rounded-full bg-secondary text-[25px]"
+                        >
+                            3
+                        </div>
+                        <p class="text-lg">
+                            Подбор и поставка комплектующих, а также, материалов для монтажа на объекте.
+                            Непосредственное выполнение электромонтажных работ и подключение оборудования
+                        </p>
+                    </div>
+                    <div class="flex gap-8">
+                        <div
+                            class="flex size-20 flex-shrink-0 items-center justify-center rounded-full bg-secondary text-[25px]"
+                        >
+                            4
+                        </div>
+                        <p class="text-lg">
+                            Пусконаладочные работы, подача рабочего напряжения в сеть, осуществляется проверка
+                            подключенных кабельных линий и оборудования. При необходимости устраняются недостатки.
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-8">
+                        <div
+                            class="flex size-20 flex-shrink-0 items-center justify-center rounded-full bg-secondary text-[25px]"
+                        >
+                            5
+                        </div>
+                        <p class="text-lg">Уборка территории или помещения после производства работ.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-20">
+            <div class="mb-12 text-center text-4xl font-bold uppercase">Преимущества</div>
+            <div class="relative grid grid-cols-3 gap-x-8 gap-y-12">
+                <img
+                    src="img/bg_advantages.png"
+                    alt=""
+                    loading="lazy"
+                    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-5"
+                    width="545"
+                    height="627"
+                />
+                <div class="flex flex-col items-center justify-center">
+                    <div class="mb-5 leading-[77px]">
+                        <svg class="icon-wallet inline-block h-[67px] w-[71px] text-secondary">
+                            <use href="#icon-wallet"></use>
+                        </svg>
+                    </div>
+                    <p class="text-center text-lg">Оплата наличным <br />или безналичным расчетом</p>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <div class="mb-5 leading-[77px]">
+                        <svg class="icon-energy inline-block h-[67px] w-[67px] text-secondary">
+                            <use href="#icon-energy"></use>
+                        </svg>
+                    </div>
+                    <p class="text-center text-lg">
+                        Допуски <br />
+                        по электробезопасности
+                    </p>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <div class="mb-5 leading-[77px]">
+                        <svg class="icon-electric-tower inline-block h-[67px] w-[67px] text-secondary">
+                            <use href="#icon-electric-tower"></use>
+                        </svg>
+                    </div>
+                    <p class="text-center text-lg">
+                        Допуск к работам <br />
+                        на высоте
+                    </p>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <div class="mb-5 leading-[77px]">
+                        <svg class="icon-electric inline-block h-[74px] w-[56px] text-secondary">
+                            <use href="#icon-electric"></use>
+                        </svg>
+                    </div>
+                    <p class="text-center text-lg">
+                        Допуск к спец.работам <br />
+                        в электроустановках
+                    </p>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <div class="mb-5 leading-[77px]">
+                        <svg class="icon-copy inline-block h-[77px] w-[59px] text-secondary">
+                            <use href="#icon-copy"></use>
+                        </svg>
+                    </div>
+                    <p class="text-center text-lg">
+                        Заключение договора <br />
+                        на оказываемые услуги
+                    </p>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <div class="mb-5 leading-[77px]">
+                        <svg class="icon-clipboard inline-block h-[77px] w-[61px] text-secondary">
+                            <use href="#icon-clipboard"></use>
+                        </svg>
+                    </div>
+                    <p class="text-center text-lg">
+                        Предоставляем акты <br />
+                        выполненных работ
+                    </p>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <div class="mb-5 leading-[77px]">
+                        <svg class="icon-certificate inline-block h-[77px] w-[69px] text-secondary">
+                            <use href="#icon-certificate"></use>
+                        </svg>
+                    </div>
+                    <p class="text-center text-lg">
+                        Лицензия на <br />
+                        электроизмерительные <br />
+                        работы
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="relative">
+            <img
+                src="img/bg_lab.jpg"
+                alt=""
+                width="2000"
+                height="1029"
+                loading="lazy"
+                class="absolute left-0 top-0 h-full w-full object-cover"
+            />
+            <div class="container relative z-10 py-20 text-white">
+                <div class="mb-12 text-center text-4xl font-bold uppercase">
+                    Перечень лабораторных <br />испытаний до 1000В
+                </div>
+                <div class="grid grid-cols-2 gap-x-8 gap-y-12">
+                    <div class="flex items-center gap-8">
+                        <div
+                            class="flex size-20 flex-shrink-0 items-center justify-center rounded-full bg-primary text-[25px]"
+                        >
+                            1
+                        </div>
+                        <p class="text-lg">
+                            Проверка соответствия смонтированной электроустановки требованиям нормативной и проектной
+                            документации (визуальный осмотр).
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-8">
+                        <div
+                            class="flex size-20 flex-shrink-0 items-center justify-center rounded-full bg-primary text-[25px]"
+                        >
+                            2
+                        </div>
+                        <p class="text-lg">
+                            Измерение сопротивления изоляции электроустановки (проводов,кабелей, электрооборудования).
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-8">
+                        <div
+                            class="flex size-20 flex-shrink-0 items-center justify-center rounded-full bg-primary text-[25px]"
+                        >
+                            3
+                        </div>
+                        <p class="text-lg">Проверка заземляющего устройства.</p>
+                    </div>
+                    <div class="flex items-center gap-8">
+                        <div
+                            class="flex size-20 flex-shrink-0 items-center justify-center rounded-full bg-primary text-[25px]"
+                        >
+                            4
+                        </div>
+                        <p class="text-lg">
+                            Проверка наличия цепи и качества контактных соединений зануляющих (заземляющих) и защитных
+                            проводников.
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-8">
+                        <div
+                            class="flex size-20 flex-shrink-0 items-center justify-center rounded-full bg-primary text-[25px]"
+                        >
+                            5
+                        </div>
+                        <p class="text-lg">
+                            Проверка цепи «фаза-нуль» в электроустановках до 1 кВ с глухим заземлением нейтрали
+                            (непосредственным измерением тока однофазного замыкания или измерением полного сопротивления
+                            петли фаза-нуль).
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-8">
+                        <div
+                            class="flex size-20 flex-shrink-0 items-center justify-center rounded-full bg-primary text-[25px]"
+                        >
+                            6
+                        </div>
+                        <p class="text-lg">Проверка работоспособности устройства защитного отключения (УЗО).</p>
+                    </div>
+                    <div class="flex items-center gap-8">
+                        <div
+                            class="flex size-20 flex-shrink-0 items-center justify-center rounded-full bg-primary text-[25px]"
+                        >
+                            7
+                        </div>
+                        <p class="text-lg">Проверка работоспособности автоматических выключателей (АВ)</p>
+                    </div>
+                    <div class="flex items-center gap-8">
+                        <div
+                            class="flex size-20 flex-shrink-0 items-center justify-center rounded-full bg-primary text-[25px]"
+                        >
+                            8
+                        </div>
+                        <p class="text-lg">
+                            Проверка работоспособности схем автоматического включения резервного питания (АВР). Проверка
+                            функционирования полностью собранных схем при различных значениях оперативного тока.
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-8">
+                        <div
+                            class="flex size-20 flex-shrink-0 items-center justify-center rounded-full bg-primary text-[25px]"
+                        >
+                            9
+                        </div>
+                        <p class="text-lg">
+                            Измерение сопротивления изоляции пола и стен изолирующих (непроводящих) помещений, зон и
+                            площадок.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative">
+            <img
+                src="img/bg_soc.jpg"
+                alt=""
+                width="2000"
+                height="210"
+                loading="lazy"
+                class="absolute left-0 top-0 h-full w-full object-cover"
+            />
+            <div class="container relative z-10 flex items-center justify-center gap-16 py-14">
+                <a
+                    href="#"
+                    class="flex h-[98px] w-[395px] items-center justify-center gap-4 rounded-[50px] bg-[#4d76a1] text-white"
+                >
+                    <span class="text-[32px] font-bold uppercase">МЫ в</span>
+                    <svg class="icon-vk h-12 w-[84px] text-white">
+                        <use href="#icon-vk"></use>
+                    </svg>
+                </a>
+                <a
+                    href="#"
+                    class="flex h-[98px] w-[457px] items-center justify-center gap-4 rounded-[50px] bg-[#c80a25] text-white"
+                >
+                    <span class="text-[32px] font-bold uppercase">Наш канал на</span>
+                    <svg class="icon-yt h-[66px] w-[67px] text-white">
+                        <use href="#icon-yt"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="container py-20">
+            <div class="mb-12 text-center text-4xl font-bold uppercase">Лицензия</div>
+            <figure class="text-center">
+                <img src="img/license.jpg" alt="" width="720" height="1033" loading="lazy" class="inline-block" />
+            </figure>
+        </div>
+        <div class="bg-black">
+            <div class="container py-12 text-white">
+                <div class="mb-12 text-center text-4xl font-bold uppercase">Контакты</div>
+                <div class="flex items-center justify-center gap-8">
+                    <div class="flex items-center gap-3">
+                        <svg class="icon-map h-[27px] w-[21px] text-secondary">
+                            <use href="#icon-map"></use>
+                        </svg>
+                        <span class="text-xl">Северная промзона, участок 202</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <a href="tel:+79283356663" class="text-xl">+7 (928) 335 66 63</a>
+                        <a href="#" class="text-[0px]">
+                            <svg class="icon-wa size-8">
+                                <use href="#icon-wa"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <a href="tel:+7928277626" class="text-xl">+7 (928) 277 76 26</a>
+                        <a href="#" class="text-[0px]">
+                            <svg class="icon-wa size-8">
+                                <use href="#icon-wa"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative border-b-[12px] border-primary">
+            <img src="img/map.jpg" alt="" width="2000" height="752" loading="lazy" class="w-full" />
+            <button
+                type="button"
+                class="absolute bottom-0 left-1/2 -translate-x-1/2 rounded-t-[10px] bg-primary px-10 py-4 text-xl text-white"
+            >
+                Остались вопросы? Напишите нам!
+            </button>
+        </div>
+        <footer class="bg-black py-10 text-white">
+            <div class="container">
+                <div class="flex items-center py-3">
+                    <img src="img/logo_2.png" alt="" width="278" height="89" loading="lazy" />
+                    <div class="ml-auto flex gap-6">
+                        <div>
+                            <div class="flex items-center gap-3">
+                                <a href="tel:+79283356663" class="text-xl">+7 (928) 335 66 63</a>
+                                <a href="#" class="text-[0px]">
+                                    <svg class="icon-wa size-8">
+                                        <use href="#icon-wa"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="pr-11 text-right">
+                                <a href="mailto:energogost@mail.ru" class="text-secondary">energogost@mail.ru</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-3">
+                                <a href="tel:+7928277626" class="text-xl">+7 (928) 277 76 26</a>
+                                <a href="#" class="text-[0px]">
+                                    <svg class="icon-wa size-8">
+                                        <use href="#icon-wa"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="pr-11 text-right">
+                                <button class="text-primary" type="button">Заказать звонок</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <a href="#" class="text-lg text-white underline hover:no-underline">Создание сайтов в Армавире</a>
+                </div>
+            </div>
+        </footer>
+        <script type="module" src="./js/common.js" defer></script>
+    </body>
 </html>
