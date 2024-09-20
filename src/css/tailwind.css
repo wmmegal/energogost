@@ -2,10 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+[x-cloak] {
+    display: none !important;
+}
+
 @layer base {
     body {
         font-family: "Roboto", system-ui;
         font-weight: 400;
         font-style: normal;
     }
+}
+
+@layer components {
+    .btn {
+        @apply inline-block px-10 py-2 rounded-[10px] text-white text-xl;
+
+        &.btn-secondary {
+            @apply bg-secondary;
+        }
+    }
+
+    .form-input {
+        @apply w-full py-4 px-9 rounded-[10px] border-0;
+    }
+}
+
+.splide__pagination {
+    @apply absolute top-1/2 transform -translate-y-1/2 right-4 xl:right-8 flex flex-col gap-3;
+
+    li {
+        button {
+            @apply bg-white bg-opacity-50 xl:h-12 w-2.5  h-6 rounded-[5px];
+
+            &.is-active {
+                @apply bg-secondary;
+            }
+        }
+    }
+}
+
+.fancybox__content {
+    padding: 0 !important;
+    background: none !important;
+}
+
+.fancybox__content>.f-button.is-close-btn {
+    top: 1rem !important;
+    right: 1rem !important;
+    background: none;
 }
