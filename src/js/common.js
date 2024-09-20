@@ -12,14 +12,14 @@ Alpine.start();
 
 new Splide('.splide', {
     direction: 'ttb',
-    heightRatio: 0.3,
+    height: 705,
     arrows: false,
     pagination: true,
     autoplay: true,
     interval: 5000,
     breakpoints: {
         640: {
-            heightRatio: 0.5,
+            height: 300,
         },
     },
 }).mount();
